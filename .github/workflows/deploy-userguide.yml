@@ -42,7 +42,7 @@ jobs:
         run: ./source/.github/scripts/deploy-userguide ${GITHUB_WORKSPACE}/source ${GITHUB_WORKSPACE}/userguide ${GITHUB_REF##*/}
 
       - name: Release
-        uses: actions/github-script@v6
+        uses: actions/github-script@v9
         with:
           github-token: ${{secrets.ACCESS_TOKEN}}
           script: |
